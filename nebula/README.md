@@ -5,20 +5,19 @@ There's always more development to go, but as far as my use cases go it appears 
 
 In particular the documentation on configuration options could use improvement, but I promise they're at least all there to be found.
 
+From buildmine10: This fork is specifically to support nebula 1.10.3 on the raspberry pi 5 version of Home Assistant OS. It's what I have, so it's all I know it works with. My solution contains what are probably bad practices for program installation since it is side stepping the package manager that is otherwise being used.
+
 ## Installation
 
 Follow these steps to get the add-on installed on your system:
 
 1. Navigate in your Home Assistant frontend to **Settings** -> **Add-ons** -> **Add-on store**.
 2. Click the three dot menu on the top right corner
-3. Click Repositories, and paste "https://github.com/mr-ransel/addon-nebula" and hit Add
+3. Click Repositories, and paste "https://github.com/buildmine10/addon-nebula" and hit Add
 4. Return to the **Add-on store***
 5. Find the "Nebula" add-on and click it.
 6. Click on the "INSTALL" button.
 
-Alternatively, use the following button to open the addon and click INSTALL
-
-[![Open this add-on in your Home Assistant instance.][addon-badge]][addon]
 
 ## How to use
 
