@@ -6,7 +6,9 @@ SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
 # Build Nebula 2
 RUN \
-    apk add --no-cache --virtual .build-dependencies \
+apk upgrade --no-cache \
+    \
+    && apk add --no-cache --virtual .build-dependencies \
         build-base \
         git \
     \
