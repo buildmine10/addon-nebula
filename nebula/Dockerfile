@@ -4,7 +4,7 @@ FROM ${BUILD_FROM}
 
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
-# Build Nebula
+# Build Nebula 2
 RUN \
     apk add --no-cache --virtual .build-dependencies \
         build-base \
