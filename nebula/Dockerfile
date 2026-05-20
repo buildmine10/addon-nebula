@@ -13,15 +13,15 @@ RUN \
         git \
     \
     && apk add --no-cache \
-        go \
         iptables \
         yq \
         bind-tools \
-#        libqrencode=4.1.1-r0 \
-#        openresolv=3.12.0-r0 \
-#        wireguard-tools=1.0.20210914-r0 \
     \
-    && git clone --branch "v1.9.0" --depth=1 \
+    && wget -qO /tmp/go.tar.gz https://go.dev/dl/go1.25.0.linux-arm64.tar.gz \
+    && tar -C /usr/local -xzf /tmp/go.tar.gz \
+    && export PATH=$PATH:/usr/local/go/bin \
+    \
+    && git clone --branch "v1.10.3" --depth=1 \
         "https://github.com/slackhq/nebula.git" /tmp/nebula \
     \
     && cd /tmp/nebula \
