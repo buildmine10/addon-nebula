@@ -2,7 +2,7 @@ name: Nebula
 version: 1.1.1
 slug: nebula
 description: HomeAssistant addon for slackhq/nebula
-url: https://github.com/mr-ransel/addon-nebula
+url: https://github.com/buildmine10/addon-nebula
 init: false
 arch:
   - aarch64
