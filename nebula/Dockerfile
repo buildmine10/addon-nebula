@@ -6,7 +6,7 @@ SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
 # Build Nebula 2
 RUN \
-    apk upgrade --no-cache musl \
+    apk add --no-cache musl=1.2.5-r12 musl-dev=1.2.5-r12 \
     \
     && apk add --no-cache --virtual .build-dependencies \
         build-base \
